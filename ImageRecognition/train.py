@@ -27,7 +27,7 @@ class ImageSet(data.Dataset):
         else:
             ch = 'p'
             label = 1
-        img = Image.open(f'./ImageRecognition/trainingset_image/{ch}_f1.jpg')
+        img = Image.open(f'./ImageRecognition/trainingset_image/d_f5.jpg')
         img = img.resize((int(img.size[0]/4), int(img.size[1]/4)))
         # print(transforms.ToTensor()(img))
         # print(transforms.ToTensor()(img).size())

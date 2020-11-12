@@ -39,7 +39,7 @@ with open('params.npy', 'rb') as f:
     fc2.b = np.load(f)
     convNet.add(fc2)
 
-img = Image.open('./ImageRecognition/trainingset_image/p_f1.jpg')
+img = Image.open('./ImageRecognition/trainingset_image/d_f1.jpg')
 img = img.resize((int(img.size[0]/4), int(img.size[1]/4)))
 
 input = np.rot90(np.rot90(np.array(img), 3, axes=(0, 2)),  axes=(1, 2))
