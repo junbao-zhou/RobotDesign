@@ -1,0 +1,293 @@
+INFO: [HLS 200-10] Running '/home/bowman/D/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'bowman' on host 'bowman-ThinkPad-X1-Tablet-Gen-3' (Linux_x86_64 version 5.4.0-54-generic) on Sat Nov 28 17:03:01 CST 2020
+INFO: [HLS 200-10] On os Ubuntu 20.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/bowman/D/MyData/Embedded/RobotDesign/RobotDesign/HLS'
+Sourcing Tcl script '/home/bowman/D/MyData/Embedded/RobotDesign/RobotDesign/HLS/conv_test/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project '/home/bowman/D/MyData/Embedded/RobotDesign/RobotDesign/HLS/conv_test'.
+INFO: [HLS 200-10] Adding design file 'conv_test/.apc/layers.cpp' to the project
+INFO: [HLS 200-10] Adding design file 'conv_test/.apc/picture.h' to the project
+INFO: [HLS 200-10] Adding design file 'conv_test/.apc/test.cpp' to the project
+INFO: [HLS 200-10] Opening solution '/home/bowman/D/MyData/Embedded/RobotDesign/RobotDesign/HLS/conv_test/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'conv_test/.apc/test.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'conv_test/.apc/layers.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1635.117 ; gain = 1227.754 ; free physical = 494 ; free virtual = 4929
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1635.117 ; gain = 1227.754 ; free physical = 494 ; free virtual = 4929
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1635.117 ; gain = 1227.754 ; free physical = 445 ; free virtual = 4906
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'linear<16, 6>' into 'test' (conv_test/.apc/layers.cpp:235) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1635.117 ; gain = 1227.754 ; free physical = 443 ; free virtual = 4902
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'output.data' (conv_test/.apc/layers.cpp:203).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1.1' (conv_test/.apc/layers.cpp:209) in function 'test' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-1.1.1' (conv_test/.apc/layers.cpp:212) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (conv_test/.apc/layers.cpp:212) in function 'test' completely with a factor of 34.
+INFO: [XFORM 203-602] Inlining function 'linear<16, 6>' into 'test' (conv_test/.apc/layers.cpp:235) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1635.117 ; gain = 1227.754 ; free physical = 365 ; free virtual = 4885
+INFO: [XFORM 203-541] Flattening a loop nest 'Loop-1' (conv_test/.apc/layers.cpp:208:16) in function 'test'.
+WARNING: [XFORM 203-631] Renaming function 'max_pool<8, 32, 2, 2>' to 'max_pool' (conv_test/.apc/layers.cpp:73:60)
+WARNING: [XFORM 203-631] Renaming function 'max_pool<16, 14, 2, 2>' to 'max_pool.1' (conv_test/.apc/layers.cpp:73:60)
+WARNING: [XFORM 203-631] Renaming function 'conv<8, 16, 16, 3, 0, 1>' to 'conv' (conv_test/.apc/layers.cpp:30:42)
+WARNING: [XFORM 203-631] Renaming function 'conv<3, 34, 8, 3, 0, 1>' to 'conv.1' (conv_test/.apc/layers.cpp:30:42)
+INFO: [HLS 200-472] Inferring partial write operation for 'input_num' (conv_test/.apc/layers.cpp:215:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'out.assign' (conv_test/.apc/layers.cpp:188:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'out.assign' (conv_test/.apc/layers.cpp:190:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'out' (conv_test/.apc/layers.cpp:117:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'out' (conv_test/.apc/layers.cpp:117:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (conv_test/.apc/layers.cpp:19:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (conv_test/.apc/layers.cpp:19:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'out' (conv_test/.apc/layers.cpp:87:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'out' (conv_test/.apc/layers.cpp:87:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (conv_test/.apc/layers.cpp:51:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (conv_test/.apc/layers.cpp:63:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (conv_test/.apc/layers.cpp:51:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (conv_test/.apc/layers.cpp:63:5)
+INFO: [HLS 200-472] Inferring partial write operation for 'out' (conv_test/.apc/layers.cpp:107:3)
+INTERNAL-INFO: never seen llvm instruction 'hdiv'(537)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1635.117 ; gain = 1227.754 ; free physical = 262 ; free virtual = 4798
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'test' ...
+WARNING: [SYN 201-103] Legalizing function name 'pad<3, 34, 0>8' to 'pad_3_34_0_8'.
+WARNING: [SYN 201-103] Legalizing function name 'conv.1' to 'conv_1'.
+WARNING: [SYN 201-103] Legalizing function name 'relu<8, 32>' to 'relu_8_32_s'.
+WARNING: [SYN 201-103] Legalizing function name 'pad<8, 16, 0>9' to 'pad_8_16_0_9'.
+WARNING: [SYN 201-103] Legalizing function name 'relu<16, 14>' to 'relu_16_14_s'.
+WARNING: [SYN 201-103] Legalizing function name 'max_pool.1' to 'max_pool_1'.
+WARNING: [SYN 201-103] Legalizing function name 'avg_pool<16, 7>' to 'avg_pool_16_7_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pad_3_34_0_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 36.68 seconds; current allocated memory: 199.598 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 199.756 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 200.260 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 200.749 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'relu_8_32_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 200.961 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 201.106 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 201.342 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 201.591 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pad_8_16_0_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 201.773 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 201.907 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 202.291 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 202.817 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'relu_16_14_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 203.052 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 203.220 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'max_pool_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 203.464 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 203.746 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'avg_pool_16_7_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 203.941 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 204.124 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'test' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:203) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:203).
+WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:203) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:203).
+WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:203) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:203).
+WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:203) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:203).
+WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 19, distance = 1, offset = 1)
+   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:203) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:203).
+WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 27, distance = 1, offset = 1)
+   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:203) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:203).
+WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 31, distance = 1, offset = 1)
+   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:203) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:203).
+WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 33, distance = 1, offset = 1)
+   between axis read on port 'input_data' and axis read on port 'input_data' (conv_test/.apc/layers.cpp:203).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 34, Depth = 34.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.59 seconds; current allocated memory: 205.048 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.95 seconds; current allocated memory: 206.354 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pad_3_34_0_8' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pad_3_34_0_8'.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 206.930 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_1_layerconv1_0_weight' to 'conv_1_layerconv1bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_1_layerconv1_0_bias' to 'conv_1_layerconv1cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_1_input_after_padding' to 'conv_1_input_aftedEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'test_hadd_16ns_16ns_16_2_full_dsp_1' to 'test_hadd_16ns_16eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'test_hmul_16ns_16ns_16_2_max_dsp_1' to 'test_hmul_16ns_16fYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'test_hadd_16ns_16eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'test_hmul_16ns_16fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 208.546 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'relu_8_32_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'test_hcmp_16ns_16ns_1_1_1' to 'test_hcmp_16ns_16g8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'test_hcmp_16ns_16g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'relu_8_32_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 211.134 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'test_hcmp_16ns_16g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool'.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 212.231 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pad_8_16_0_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pad_8_16_0_9'.
+INFO: [HLS 200-111]  Elapsed time: 0.29 seconds; current allocated memory: 213.653 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'conv_layerconv2_0_weight' to 'conv_layerconv2_0hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_layerconv2_0_bias' to 'conv_layerconv2_0ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'conv_input_after_padding' to 'conv_input_after_jbC' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'test_hadd_16ns_16eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'test_hmul_16ns_16fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv'.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 215.159 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'relu_16_14_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'test_hcmp_16ns_16g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'relu_16_14_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.53 seconds; current allocated memory: 217.756 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'max_pool_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'test_hcmp_16ns_16g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'max_pool_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 219.023 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'avg_pool_16_7_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'test_hdiv_16ns_16ns_16_5_1' to 'test_hdiv_16ns_16kbM' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'test_hadd_16ns_16eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'test_hdiv_16ns_16kbM': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'avg_pool_16_7_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 220.716 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'test' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/input_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/input_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/output_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'test/output_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'test' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'test_hadd_16ns_16eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'test_hmul_16ns_16fYi': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'test'.
+INFO: [HLS 200-111]  Elapsed time: 0.48 seconds; current allocated memory: 223.908 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 115.63 MHz
+INFO: [RTMG 210-279] Implementing memory 'conv_1_layerconv1bkb_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'conv_1_layerconv1cud_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'conv_1_input_aftedEe_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-279] Implementing memory 'conv_layerconv2_0hbi_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'conv_layerconv2_0ibs_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'conv_input_after_jbC_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'test_input_num_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-279] Implementing memory 'test_layerfc_weight_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'test_layerfc_bias_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'test_out_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'test_out3_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'test_out5_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'test_out18_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'test_out_assign_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 1635.117 ; gain = 1227.754 ; free physical = 129 ; free virtual = 4727
+INFO: [VHDL 208-304] Generating VHDL RTL for test.
+INFO: [VLOG 209-307] Generating Verilog RTL for test.
+INFO: [HLS 200-112] Total elapsed time: 47.88 seconds; peak allocated memory: 223.908 MB.

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 33, distance = 1, offset = 1)&#xA;   between axis read on port 'input_data' and axis read on port 'input_data' (conv_test/.apc/layers.cpp:203)." projectName="conv_test" solutionName="solution1" date="2020-11-28T17:03:40.977+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 31, distance = 1, offset = 1)&#xA;   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:203) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:203)." projectName="conv_test" solutionName="solution1" date="2020-11-28T17:03:40.935+0800" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

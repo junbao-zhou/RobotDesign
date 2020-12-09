@@ -1,0 +1,56 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'test'" level="0">
+<item name = "Date">Sat Nov 28 17:03:42 2020
+</item>
+<item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
+<item name = "Project">conv_test</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu3eg-sbva484-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.648 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_conv_1_fu_642">conv_1, 1351702, 1351702, 13.517 ms, 13.517 ms, 1351702, 1351702, none</column>
+<column name="grp_conv_fu_653">conv, 1350692, 1350692, 13.507 ms, 13.507 ms, 1350692, 1350692, none</column>
+<column name="grp_avg_pool_16_7_s_fu_663">avg_pool_16_7_s, 2673, 2673, 26.730 us, 26.730 us, 2673, 2673, none</column>
+<column name="grp_max_pool_1_fu_669">max_pool_1, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_max_pool_fu_675">max_pool, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_relu_16_14_s_fu_681">relu_16_14_s, 13025, 13025, 0.130 ms, 0.130 ms, 13025, 13025, none</column>
+<column name="grp_relu_8_32_s_fu_687">relu_8_32_s, 33297, 33297, 0.333 ms, 0.333 ms, 33297, 33297, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">3468, 3468, 34, 34, 1, 102, yes</column>
+<column name="- Loop 2">504, 504, 84, -, -, 6, no</column>
+<column name=" + Loop 2.1">80, 80, 5, -, -, 16, no</column>
+<column name="- Loop 3">18, 18, 3, -, -, 6, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

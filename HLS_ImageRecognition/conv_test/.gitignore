@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!.cproject
+!*.xml
+!*.app
+!*.cpp
+!*.h
+
+!*/
