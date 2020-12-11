@@ -19,7 +19,7 @@ using namespace sc_dt;
 struct conv_layerconv2_0ibs_ram : public sc_core::sc_module {
 
   static const unsigned DataWidth = 16;
-  static const unsigned AddressRange = 16;
+  static const unsigned AddressRange = 14;
   static const unsigned AddressWidth = 4;
 
 //latency = 1
@@ -36,22 +36,20 @@ sc_lv<DataWidth> ram[AddressRange];
 
 
    SC_CTOR(conv_layerconv2_0ibs_ram) {
-        ram[0] = "0b1010111000100000";
-        ram[1] = "0b1011001011001101";
-        ram[2] = "0b1010101011010110";
-        ram[3] = "0b1011000000110001";
-        ram[4] = "0b1010111101100011";
-        ram[5] = "0b1010100101110100";
-        ram[6] = "0b0010011001011001";
-        ram[7] = "0b1010011110111011";
-        ram[8] = "0b0010110100111100";
-        ram[9] = "0b1010101100110010";
-        ram[10] = "0b1010100101100000";
-        ram[11] = "0b0010111000101000";
-        ram[12] = "0b0011000000110011";
-        ram[13] = "0b1010110100101010";
-        ram[14] = "0b0010011100111000";
-        ram[15] = "0b1010010110100010";
+        ram[0] = "0b1010110000000010";
+        ram[1] = "0b1011010101100011";
+        ram[2] = "0b1011010100111100";
+        ram[3] = "0b1010111100101000";
+        ram[4] = "0b0010111000001001";
+        ram[5] = "0b1011000100001001";
+        ram[6] = "0b1011000110011111";
+        ram[7] = "0b1010101000001011";
+        ram[8] = "0b1011000111010010";
+        ram[9] = "0b1010111011010100";
+        ram[10] = "0b1010101001001001";
+        ram[11] = "0b1011001011110110";
+        ram[12] = "0b0011001101010010";
+        ram[13] = "0b0010011100010001";
 
 
 SC_METHOD(prc_write_0);
@@ -78,7 +76,7 @@ SC_MODULE(conv_layerconv2_0ibs) {
 
 
 static const unsigned DataWidth = 16;
-static const unsigned AddressRange = 16;
+static const unsigned AddressRange = 14;
 static const unsigned AddressWidth = 4;
 
 sc_core::sc_in <sc_lv<AddressWidth> > address0;

@@ -91,24 +91,6 @@ void max_pool(half in[in_channels][in_size][in_size], half out[in_channels][(in_
 }
 
 template <int in_channels, int in_size>
-void avg_pool(half in[in_channels][in_size][in_size], half out[in_channels])
-{
-	for (int i = 0; i < in_channels; i++)
-	{
-		half m = 0;
-		for (int j = 0; j < in_size; j++)
-		{
-			for (int k = 0; k < in_size; k++)
-			{
-				// #pragma HLS PIPELINE
-				m += in[i][j][k];
-			}
-		}
-		out[i] = m / (in_size * in_size);
-	}
-}
-
-template <int in_channels, int in_size>
 void relu(half in[in_channels][in_size][in_size], half out[in_channels][in_size][in_size])
 {
 	for (int m = 0; m < in_channels; ++m)
@@ -197,8 +179,8 @@ struct my_half
 	ap_uint<1> last;
 };
 
-const int input_pic_size = 34;
-const int output_features = 6;
+const int input_pic_size = 51;
+const int output_features = 12;
 static half input_num[3][input_pic_size][input_pic_size];
 void test(my_half input[3][input_pic_size][input_pic_size], my_half output[output_features])
 {
@@ -215,24 +197,35 @@ void test(my_half input[3][input_pic_size][input_pic_size], my_half output[outpu
 				input_num[m][i][j] = input[m][i][j].data;
 			}
 		}
-	half out[8][32][32];
-	conv<3, input_pic_size, 8, 3, 0, 1>(input_num, layerconv1_0_weight, layerconv1_0_bias, out);
-	half out1[8][32][32];
-	relu<8, 32>(out, out1);
-	half out2[8][16][16];
-	max_pool<8, 32, 2, 2>(out1, out2);
+	const int conv1_out_size = 49;
+	const int conv1_out_features = 8;
+	half out[conv1_out_features][conv1_out_size][conv1_out_size];
+	conv<3, input_pic_size, conv1_out_features, 3, 0, 1>(input_num, layerconv1_0_weight, layerconv1_0_bias, out);
+	half out1[conv1_out_features][conv1_out_size][conv1_out_size];
+	relu<conv1_out_features, conv1_out_size>(out, out1);
 
-	half out3[16][14][14];
-	conv<8, 16, 16, 3, 0, 1>(out2, layerconv2_0_weight, layerconv2_0_bias, out3);
-	half out4[16][14][14];
-	relu<16, 14>(out3, out4);
-	half out5[16][7][7];
-	max_pool<16, 14, 2, 2>(out4, out5);
+	const int conv2_out_size = 24;
+	const int conv2_out_features = 14;
+	half out2[conv2_out_features][conv2_out_size][conv2_out_size];
+	conv<conv1_out_features, conv1_out_size, conv2_out_features, 3, 0, 2>(out1, layerconv2_0_weight, layerconv2_0_bias, out2);
+	half out3[conv2_out_features][conv2_out_size][conv2_out_size];
+	relu<conv2_out_features, conv2_out_size>(out2, out3);
 
-	half out18[16];
-	avg_pool<16, 7>(out5, out18);
+	const int conv3_out_size = 22;
+	const int conv3_out_features = 24;
+	half out4[conv3_out_features][conv3_out_size][conv3_out_size];
+	conv<conv2_out_features, conv2_out_size, conv3_out_features, 3, 0, 1>(out3, layerconv3_0_weight, layerconv3_0_bias, out4);
+	half out5[conv3_out_features][conv3_out_size][conv3_out_size];
+	relu<conv3_out_features, conv3_out_size>(out4, out5);
+
+	const int max_pool_out_size = 11;
+	half out6[conv3_out_features][max_pool_out_size][max_pool_out_size];
+	max_pool<conv3_out_features, conv3_out_size, 2, 2>(out5, out6);
+
+	half out18[conv3_out_features];
+	mean<conv3_out_features, max_pool_out_size>(out6, out18);
 	half out19[output_features];
-	linear<16, output_features>(out18, out19, layerfc_weight, layerfc_bias);
+	linear<conv3_out_features, output_features>(out18, out19, layerfc_weight, layerfc_bias);
 
 	for (int m = 0; m < output_features; m++)
 	{

@@ -5,62 +5,76 @@
 <ModuleName>test</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_conv_1_fu_642</InstName>
+<InstName>grp_conv_1_fu_818</InstName>
 <ModuleName>conv_1</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>642</ID>
+<ID>818</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_pad_3_34_0_8_fu_266</InstName>
-<ModuleName>pad_3_34_0_8</ModuleName>
+<InstName>grp_pad_3_51_0_9_fu_297</InstName>
+<ModuleName>pad_3_51_0_9</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>266</ID>
+<ID>297</ID>
 </Instance>
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_conv_fu_653</InstName>
+<InstName>grp_conv_fu_829</InstName>
 <ModuleName>conv</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>653</ID>
+<ID>829</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_pad_8_16_0_9_fu_269</InstName>
-<ModuleName>pad_8_16_0_9</ModuleName>
+<InstName>grp_pad_8_49_0_10_fu_283</InstName>
+<ModuleName>pad_8_49_0_10</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>269</ID>
+<ID>283</ID>
 </Instance>
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_avg_pool_16_7_s_fu_663</InstName>
-<ModuleName>avg_pool_16_7_s</ModuleName>
+<InstName>grp_conv_2_fu_839</InstName>
+<ModuleName>conv_2</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>663</ID>
+<ID>839</ID>
+<InstancesList>
+<Instance>
+<InstName>grp_pad_14_24_0_11_fu_295</InstName>
+<ModuleName>pad_14_24_0_11</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>295</ID>
+</Instance>
+</InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_max_pool_1_fu_669</InstName>
-<ModuleName>max_pool_1</ModuleName>
+<InstName>grp_mean_24_11_s_fu_849</InstName>
+<ModuleName>mean_24_11_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>669</ID>
+<ID>849</ID>
 </Instance>
 <Instance>
-<InstName>grp_max_pool_fu_675</InstName>
+<InstName>grp_max_pool_fu_855</InstName>
 <ModuleName>max_pool</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>675</ID>
+<ID>855</ID>
 </Instance>
 <Instance>
-<InstName>grp_relu_16_14_s_fu_681</InstName>
-<ModuleName>relu_16_14_s</ModuleName>
+<InstName>grp_relu_8_49_s_fu_861</InstName>
+<ModuleName>relu_8_49_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>681</ID>
+<ID>861</ID>
 </Instance>
 <Instance>
-<InstName>grp_relu_8_32_s_fu_687</InstName>
-<ModuleName>relu_8_32_s</ModuleName>
+<InstName>grp_relu_24_22_s_fu_867</InstName>
+<ModuleName>relu_24_22_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>687</ID>
+<ID>867</ID>
+</Instance>
+<Instance>
+<InstName>grp_relu_14_24_s_fu_873</InstName>
+<ModuleName>relu_14_24_s</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>873</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -68,40 +82,40 @@
 
 <ModuleInformation>
 <Module>
-<Name>pad_3_34_0_8</Name>
+<Name>pad_3_51_0_9</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>2.704</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.077</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>7147</Best-caseLatency>
-<Average-caseLatency>7147</Average-caseLatency>
-<Worst-caseLatency>7147</Worst-caseLatency>
-<Best-caseRealTimeLatency>71.470 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>71.470 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>71.470 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>7147</PipelineInitiationInterval>
+<Best-caseLatency>15919</Best-caseLatency>
+<Average-caseLatency>15919</Average-caseLatency>
+<Worst-caseLatency>15919</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.159 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.159 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.159 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>15919</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
 <TripCount>3</TripCount>
-<Latency>7146</Latency>
-<IterationLatency>2382</IterationLatency>
-<PipelineDepth>2382</PipelineDepth>
+<Latency>15918</Latency>
+<IterationLatency>5306</IterationLatency>
+<PipelineDepth>5306</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
-<TripCount>34</TripCount>
-<Latency>2380</Latency>
-<IterationLatency>70</IterationLatency>
-<PipelineDepth>70</PipelineDepth>
+<TripCount>51</TripCount>
+<Latency>5304</Latency>
+<IterationLatency>104</IterationLatency>
+<PipelineDepth>104</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
-<TripCount>34</TripCount>
-<Latency>68</Latency>
+<TripCount>51</TripCount>
+<Latency>102</Latency>
 <IterationLatency>2</IterationLatency>
 <PipelineDepth>2</PipelineDepth>
 </Loop1.1.1>
@@ -111,17 +125,17 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>65</FF>
-<LUT>199</LUT>
-<BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
+<FF>75</FF>
+<LUT>228</LUT>
+<BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>pad&lt;3, 34, 0&gt;8</Object>
+<Object>pad&lt;3, 51, 0&gt;9</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -132,7 +146,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>pad&lt;3, 34, 0&gt;8</Object>
+<Object>pad&lt;3, 51, 0&gt;9</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -143,7 +157,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>pad&lt;3, 34, 0&gt;8</Object>
+<Object>pad&lt;3, 51, 0&gt;9</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -154,7 +168,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>pad&lt;3, 34, 0&gt;8</Object>
+<Object>pad&lt;3, 51, 0&gt;9</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -165,7 +179,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>pad&lt;3, 34, 0&gt;8</Object>
+<Object>pad&lt;3, 51, 0&gt;9</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -176,7 +190,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>pad&lt;3, 34, 0&gt;8</Object>
+<Object>pad&lt;3, 51, 0&gt;9</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -193,7 +207,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>12</Bits>
+<Bits>13</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -226,7 +240,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>12</Bits>
+<Bits>13</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -273,32 +287,32 @@
 <EstimatedClockPeriod>8.648</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>1351702</Best-caseLatency>
-<Average-caseLatency>1351702</Average-caseLatency>
-<Worst-caseLatency>1351702</Worst-caseLatency>
-<Best-caseRealTimeLatency>13.517 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>13.517 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>13.517 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1351702</PipelineInitiationInterval>
+<Best-caseLatency>3167642</Best-caseLatency>
+<Average-caseLatency>3167642</Average-caseLatency>
+<Worst-caseLatency>3167642</Worst-caseLatency>
+<Best-caseRealTimeLatency>31.676 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>31.676 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>31.676 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>3167642</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
 <TripCount>8</TripCount>
-<Latency>1319440</Latency>
-<IterationLatency>164930</IterationLatency>
-<PipelineDepth>164930</PipelineDepth>
+<Latency>3093288</Latency>
+<IterationLatency>386661</IterationLatency>
+<PipelineDepth>386661</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
-<TripCount>32</TripCount>
-<Latency>164928</Latency>
-<IterationLatency>5154</IterationLatency>
-<PipelineDepth>5154</PipelineDepth>
+<TripCount>49</TripCount>
+<Latency>386659</Latency>
+<IterationLatency>7891</IterationLatency>
+<PipelineDepth>7891</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
-<TripCount>32</TripCount>
-<Latency>5152</Latency>
+<TripCount>49</TripCount>
+<Latency>7889</Latency>
 <IterationLatency>161</IterationLatency>
 <PipelineDepth>161</PipelineDepth>
 <Loop1.1.1.1>
@@ -328,19 +342,19 @@
 <Loop2>
 <Name>Loop 2</Name>
 <TripCount>8</TripCount>
-<Latency>25112</Latency>
-<IterationLatency>3139</IterationLatency>
-<PipelineDepth>3139</PipelineDepth>
+<Latency>58432</Latency>
+<IterationLatency>7304</IterationLatency>
+<PipelineDepth>7304</PipelineDepth>
 <Loop2.1>
 <Name>Loop 2.1</Name>
-<TripCount>32</TripCount>
-<Latency>3136</Latency>
-<IterationLatency>98</IterationLatency>
-<PipelineDepth>98</PipelineDepth>
+<TripCount>49</TripCount>
+<Latency>7301</Latency>
+<IterationLatency>149</IterationLatency>
+<PipelineDepth>149</PipelineDepth>
 <Loop2.1.1>
 <Name>Loop 2.1.1</Name>
-<TripCount>32</TripCount>
-<Latency>96</Latency>
+<TripCount>49</TripCount>
+<Latency>147</Latency>
 <IterationLatency>3</IterationLatency>
 <PipelineDepth>3</PipelineDepth>
 </Loop2.1.1>
@@ -350,10 +364,10 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>5</BRAM_18K>
+<BRAM_18K>9</BRAM_18K>
 <DSP48E>4</DSP48E>
-<FF>555</FF>
-<LUT>1236</LUT>
+<FF>616</FF>
+<LUT>1443</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>
@@ -432,7 +446,651 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>12</Bits>
+<Bits>13</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_ce0</name>
+<Object>input_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_q0</name>
+<Object>input_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_address0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_ce0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_we0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_d0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_q0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+</InterfaceSummary>
+</Module>
+<Module>
+<Name>relu_8_49_s</Name>
+<PerformanceEstimates>
+<SummaryOfTimingAnalysis>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>7.995</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<Best-caseLatency>77633</Best-caseLatency>
+<Average-caseLatency>77633</Average-caseLatency>
+<Worst-caseLatency>77633</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.776 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.776 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.776 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>77633</PipelineInitiationInterval>
+<PipelineType>none</PipelineType>
+</SummaryOfOverallLatency>
+<SummaryOfLoopLatency>
+<Loop1>
+<Name>Loop 1</Name>
+<TripCount>8</TripCount>
+<Latency>77632</Latency>
+<IterationLatency>9704</IterationLatency>
+<PipelineDepth>9704</PipelineDepth>
+<Loop1.1>
+<Name>Loop 1.1</Name>
+<TripCount>49</TripCount>
+<Latency>9702</Latency>
+<IterationLatency>198</IterationLatency>
+<PipelineDepth>198</PipelineDepth>
+<Loop1.1.1>
+<Name>Loop 1.1.1</Name>
+<TripCount>49</TripCount>
+<Latency>196</Latency>
+<IterationLatency>4</IterationLatency>
+<PipelineDepth>4</PipelineDepth>
+</Loop1.1.1>
+</Loop1.1>
+</Loop1>
+</SummaryOfLoopLatency>
+</PerformanceEstimates>
+<AreaEstimates>
+<Resources>
+<DSP48E>0</DSP48E>
+<FF>119</FF>
+<LUT>298</LUT>
+<BRAM_18K>0</BRAM_18K>
+<URAM>0</URAM>
+</Resources>
+</AreaEstimates>
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_clk</name>
+<Object>relu&lt;8, 49&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_rst</name>
+<Object>relu&lt;8, 49&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>relu&lt;8, 49&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>relu&lt;8, 49&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>relu&lt;8, 49&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>relu&lt;8, 49&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>in_r_address0</name>
+<Object>in_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>in_r_ce0</name>
+<Object>in_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>in_r_q0</name>
+<Object>in_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_address0</name>
+<Object>out_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_ce0</name>
+<Object>out_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_we0</name>
+<Object>out_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_d0</name>
+<Object>out_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+</InterfaceSummary>
+</Module>
+<Module>
+<Name>pad_8_49_0_10</Name>
+<PerformanceEstimates>
+<SummaryOfTimingAnalysis>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>3.001</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<Best-caseLatency>39217</Best-caseLatency>
+<Average-caseLatency>39217</Average-caseLatency>
+<Worst-caseLatency>39217</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.392 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.392 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.392 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>39217</PipelineInitiationInterval>
+<PipelineType>none</PipelineType>
+</SummaryOfOverallLatency>
+<SummaryOfLoopLatency>
+<Loop1>
+<Name>Loop 1</Name>
+<TripCount>8</TripCount>
+<Latency>39216</Latency>
+<IterationLatency>4902</IterationLatency>
+<PipelineDepth>4902</PipelineDepth>
+<Loop1.1>
+<Name>Loop 1.1</Name>
+<TripCount>49</TripCount>
+<Latency>4900</Latency>
+<IterationLatency>100</IterationLatency>
+<PipelineDepth>100</PipelineDepth>
+<Loop1.1.1>
+<Name>Loop 1.1.1</Name>
+<TripCount>49</TripCount>
+<Latency>98</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop1.1.1>
+</Loop1.1>
+</Loop1>
+</SummaryOfLoopLatency>
+</PerformanceEstimates>
+<AreaEstimates>
+<Resources>
+<DSP48E>0</DSP48E>
+<FF>85</FF>
+<LUT>248</LUT>
+<BRAM_18K>0</BRAM_18K>
+<URAM>0</URAM>
+</Resources>
+</AreaEstimates>
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_clk</name>
+<Object>pad&lt;8, 49, 0&gt;10</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_rst</name>
+<Object>pad&lt;8, 49, 0&gt;10</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>pad&lt;8, 49, 0&gt;10</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>pad&lt;8, 49, 0&gt;10</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>pad&lt;8, 49, 0&gt;10</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>pad&lt;8, 49, 0&gt;10</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_address0</name>
+<Object>input_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_ce0</name>
+<Object>input_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_q0</name>
+<Object>input_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_address0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_ce0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_we0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_d0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+</InterfaceSummary>
+</Module>
+<Module>
+<Name>conv</Name>
+<PerformanceEstimates>
+<SummaryOfTimingAnalysis>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>8.648</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<Best-caseLatency>3500090</Best-caseLatency>
+<Average-caseLatency>3500090</Average-caseLatency>
+<Worst-caseLatency>3500090</Worst-caseLatency>
+<Best-caseRealTimeLatency>35.001 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>35.001 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>35.001 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>3500090</PipelineInitiationInterval>
+<PipelineType>none</PipelineType>
+</SummaryOfOverallLatency>
+<SummaryOfLoopLatency>
+<Loop1>
+<Name>Loop 1</Name>
+<TripCount>14</TripCount>
+<Latency>3435964</Latency>
+<IterationLatency>245426</IterationLatency>
+<PipelineDepth>245426</PipelineDepth>
+<Loop1.1>
+<Name>Loop 1.1</Name>
+<TripCount>24</TripCount>
+<Latency>245424</Latency>
+<IterationLatency>10226</IterationLatency>
+<PipelineDepth>10226</PipelineDepth>
+<Loop1.1.1>
+<Name>Loop 1.1.1</Name>
+<TripCount>24</TripCount>
+<Latency>10224</Latency>
+<IterationLatency>426</IterationLatency>
+<PipelineDepth>426</PipelineDepth>
+<Loop1.1.1.1>
+<Name>Loop 1.1.1.1</Name>
+<TripCount>8</TripCount>
+<Latency>424</Latency>
+<IterationLatency>53</IterationLatency>
+<PipelineDepth>53</PipelineDepth>
+<Loop1.1.1.1.1>
+<Name>Loop 1.1.1.1.1</Name>
+<TripCount>3</TripCount>
+<Latency>51</Latency>
+<IterationLatency>17</IterationLatency>
+<PipelineDepth>17</PipelineDepth>
+<Loop1.1.1.1.1.1>
+<Name>Loop 1.1.1.1.1.1</Name>
+<TripCount>3</TripCount>
+<Latency>15</Latency>
+<IterationLatency>5</IterationLatency>
+<PipelineDepth>5</PipelineDepth>
+</Loop1.1.1.1.1.1>
+</Loop1.1.1.1.1>
+</Loop1.1.1.1>
+</Loop1.1.1>
+</Loop1.1>
+</Loop1>
+<Loop2>
+<Name>Loop 2</Name>
+<TripCount>14</TripCount>
+<Latency>24906</Latency>
+<IterationLatency>1779</IterationLatency>
+<PipelineDepth>1779</PipelineDepth>
+<Loop2.1>
+<Name>Loop 2.1</Name>
+<TripCount>24</TripCount>
+<Latency>1776</Latency>
+<IterationLatency>74</IterationLatency>
+<PipelineDepth>74</PipelineDepth>
+<Loop2.1.1>
+<Name>Loop 2.1.1</Name>
+<TripCount>24</TripCount>
+<Latency>72</Latency>
+<IterationLatency>3</IterationLatency>
+<PipelineDepth>3</PipelineDepth>
+</Loop2.1.1>
+</Loop2.1>
+</Loop2>
+</SummaryOfLoopLatency>
+</PerformanceEstimates>
+<AreaEstimates>
+<Resources>
+<BRAM_18K>21</BRAM_18K>
+<DSP48E>4</DSP48E>
+<FF>603</FF>
+<LUT>1397</LUT>
+<URAM>0</URAM>
+</Resources>
+</AreaEstimates>
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_clk</name>
+<Object>conv</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_rst</name>
+<Object>conv</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>conv</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>conv</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>conv</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>conv</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_address0</name>
+<Object>input_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>15</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -515,7 +1173,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>relu_8_32_s</Name>
+<Name>relu_14_24_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
@@ -523,32 +1181,32 @@
 <EstimatedClockPeriod>7.995</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>33297</Best-caseLatency>
-<Average-caseLatency>33297</Average-caseLatency>
-<Worst-caseLatency>33297</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.333 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.333 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.333 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>33297</PipelineInitiationInterval>
+<Best-caseLatency>32957</Best-caseLatency>
+<Average-caseLatency>32957</Average-caseLatency>
+<Worst-caseLatency>32957</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.330 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.330 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.330 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>32957</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
-<TripCount>8</TripCount>
-<Latency>33296</Latency>
-<IterationLatency>4162</IterationLatency>
-<PipelineDepth>4162</PipelineDepth>
+<TripCount>14</TripCount>
+<Latency>32956</Latency>
+<IterationLatency>2354</IterationLatency>
+<PipelineDepth>2354</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
-<TripCount>32</TripCount>
-<Latency>4160</Latency>
-<IterationLatency>130</IterationLatency>
-<PipelineDepth>130</PipelineDepth>
+<TripCount>24</TripCount>
+<Latency>2352</Latency>
+<IterationLatency>98</IterationLatency>
+<PipelineDepth>98</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
-<TripCount>32</TripCount>
-<Latency>128</Latency>
+<TripCount>24</TripCount>
+<Latency>96</Latency>
 <IterationLatency>4</IterationLatency>
 <PipelineDepth>4</PipelineDepth>
 </Loop1.1.1>
@@ -560,7 +1218,7 @@
 <Resources>
 <DSP48E>0</DSP48E>
 <FF>100</FF>
-<LUT>224</LUT>
+<LUT>260</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -568,7 +1226,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>relu&lt;8, 32&gt;</Object>
+<Object>relu&lt;14, 24&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -579,7 +1237,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>relu&lt;8, 32&gt;</Object>
+<Object>relu&lt;14, 24&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -590,7 +1248,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>relu&lt;8, 32&gt;</Object>
+<Object>relu&lt;14, 24&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -601,7 +1259,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>relu&lt;8, 32&gt;</Object>
+<Object>relu&lt;14, 24&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -612,7 +1270,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>relu&lt;8, 32&gt;</Object>
+<Object>relu&lt;14, 24&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -623,7 +1281,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>relu&lt;8, 32&gt;</Object>
+<Object>relu&lt;14, 24&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -674,6 +1332,650 @@
 <IOConfig></IOConfig>
 <Dir>out</Dir>
 <Bits>13</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_ce0</name>
+<Object>out_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_we0</name>
+<Object>out_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_d0</name>
+<Object>out_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+</InterfaceSummary>
+</Module>
+<Module>
+<Name>pad_14_24_0_11</Name>
+<PerformanceEstimates>
+<SummaryOfTimingAnalysis>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>2.704</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<Best-caseLatency>16829</Best-caseLatency>
+<Average-caseLatency>16829</Average-caseLatency>
+<Worst-caseLatency>16829</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.168 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.168 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.168 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>16829</PipelineInitiationInterval>
+<PipelineType>none</PipelineType>
+</SummaryOfOverallLatency>
+<SummaryOfLoopLatency>
+<Loop1>
+<Name>Loop 1</Name>
+<TripCount>14</TripCount>
+<Latency>16828</Latency>
+<IterationLatency>1202</IterationLatency>
+<PipelineDepth>1202</PipelineDepth>
+<Loop1.1>
+<Name>Loop 1.1</Name>
+<TripCount>24</TripCount>
+<Latency>1200</Latency>
+<IterationLatency>50</IterationLatency>
+<PipelineDepth>50</PipelineDepth>
+<Loop1.1.1>
+<Name>Loop 1.1.1</Name>
+<TripCount>24</TripCount>
+<Latency>48</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop1.1.1>
+</Loop1.1>
+</Loop1>
+</SummaryOfLoopLatency>
+</PerformanceEstimates>
+<AreaEstimates>
+<Resources>
+<FF>66</FF>
+<LUT>210</LUT>
+<BRAM_18K>0</BRAM_18K>
+<DSP48E>0</DSP48E>
+<URAM>0</URAM>
+</Resources>
+</AreaEstimates>
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_clk</name>
+<Object>pad&lt;14, 24, 0&gt;11</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_rst</name>
+<Object>pad&lt;14, 24, 0&gt;11</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>pad&lt;14, 24, 0&gt;11</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>pad&lt;14, 24, 0&gt;11</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>pad&lt;14, 24, 0&gt;11</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>pad&lt;14, 24, 0&gt;11</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_address0</name>
+<Object>input_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>13</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_ce0</name>
+<Object>input_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_q0</name>
+<Object>input_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_address0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>13</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_ce0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_we0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_d0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+</InterfaceSummary>
+</Module>
+<Module>
+<Name>conv_2</Name>
+<PerformanceEstimates>
+<SummaryOfTimingAnalysis>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>8.648</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<Best-caseLatency>8696216</Best-caseLatency>
+<Average-caseLatency>8696216</Average-caseLatency>
+<Worst-caseLatency>8696216</Worst-caseLatency>
+<Best-caseRealTimeLatency>86.962 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>86.962 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>86.962 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>8696216</PipelineInitiationInterval>
+<PipelineType>none</PipelineType>
+</SummaryOfOverallLatency>
+<SummaryOfLoopLatency>
+<Loop1>
+<Name>Loop 1</Name>
+<TripCount>24</TripCount>
+<Latency>8643408</Latency>
+<IterationLatency>360142</IterationLatency>
+<PipelineDepth>360142</PipelineDepth>
+<Loop1.1>
+<Name>Loop 1.1</Name>
+<TripCount>22</TripCount>
+<Latency>360140</Latency>
+<IterationLatency>16370</IterationLatency>
+<PipelineDepth>16370</PipelineDepth>
+<Loop1.1.1>
+<Name>Loop 1.1.1</Name>
+<TripCount>22</TripCount>
+<Latency>16368</Latency>
+<IterationLatency>744</IterationLatency>
+<PipelineDepth>744</PipelineDepth>
+<Loop1.1.1.1>
+<Name>Loop 1.1.1.1</Name>
+<TripCount>14</TripCount>
+<Latency>742</Latency>
+<IterationLatency>53</IterationLatency>
+<PipelineDepth>53</PipelineDepth>
+<Loop1.1.1.1.1>
+<Name>Loop 1.1.1.1.1</Name>
+<TripCount>3</TripCount>
+<Latency>51</Latency>
+<IterationLatency>17</IterationLatency>
+<PipelineDepth>17</PipelineDepth>
+<Loop1.1.1.1.1.1>
+<Name>Loop 1.1.1.1.1.1</Name>
+<TripCount>3</TripCount>
+<Latency>15</Latency>
+<IterationLatency>5</IterationLatency>
+<PipelineDepth>5</PipelineDepth>
+</Loop1.1.1.1.1.1>
+</Loop1.1.1.1.1>
+</Loop1.1.1.1>
+</Loop1.1.1>
+</Loop1.1>
+</Loop1>
+<Loop2>
+<Name>Loop 2</Name>
+<TripCount>24</TripCount>
+<Latency>35976</Latency>
+<IterationLatency>1499</IterationLatency>
+<PipelineDepth>1499</PipelineDepth>
+<Loop2.1>
+<Name>Loop 2.1</Name>
+<TripCount>22</TripCount>
+<Latency>1496</Latency>
+<IterationLatency>68</IterationLatency>
+<PipelineDepth>68</PipelineDepth>
+<Loop2.1.1>
+<Name>Loop 2.1.1</Name>
+<TripCount>22</TripCount>
+<Latency>66</Latency>
+<IterationLatency>3</IterationLatency>
+<PipelineDepth>3</PipelineDepth>
+</Loop2.1.1>
+</Loop2.1>
+</Loop2>
+</SummaryOfLoopLatency>
+</PerformanceEstimates>
+<AreaEstimates>
+<Resources>
+<BRAM_18K>12</BRAM_18K>
+<DSP48E>6</DSP48E>
+<FF>603</FF>
+<LUT>1331</LUT>
+<URAM>0</URAM>
+</Resources>
+</AreaEstimates>
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_clk</name>
+<Object>conv.2</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_rst</name>
+<Object>conv.2</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>conv.2</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>conv.2</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>conv.2</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>conv.2</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_address0</name>
+<Object>input_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>13</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_ce0</name>
+<Object>input_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_r_q0</name>
+<Object>input_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_address0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>14</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_ce0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_we0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_d0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>output_r_q0</name>
+<Object>output_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+</InterfaceSummary>
+</Module>
+<Module>
+<Name>relu_24_22_s</Name>
+<PerformanceEstimates>
+<SummaryOfTimingAnalysis>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>7.995</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<Best-caseLatency>47569</Best-caseLatency>
+<Average-caseLatency>47569</Average-caseLatency>
+<Worst-caseLatency>47569</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.476 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.476 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.476 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>47569</PipelineInitiationInterval>
+<PipelineType>none</PipelineType>
+</SummaryOfOverallLatency>
+<SummaryOfLoopLatency>
+<Loop1>
+<Name>Loop 1</Name>
+<TripCount>24</TripCount>
+<Latency>47568</Latency>
+<IterationLatency>1982</IterationLatency>
+<PipelineDepth>1982</PipelineDepth>
+<Loop1.1>
+<Name>Loop 1.1</Name>
+<TripCount>22</TripCount>
+<Latency>1980</Latency>
+<IterationLatency>90</IterationLatency>
+<PipelineDepth>90</PipelineDepth>
+<Loop1.1.1>
+<Name>Loop 1.1.1</Name>
+<TripCount>22</TripCount>
+<Latency>88</Latency>
+<IterationLatency>4</IterationLatency>
+<PipelineDepth>4</PipelineDepth>
+</Loop1.1.1>
+</Loop1.1>
+</Loop1>
+</SummaryOfLoopLatency>
+</PerformanceEstimates>
+<AreaEstimates>
+<Resources>
+<DSP48E>1</DSP48E>
+<FF>117</FF>
+<LUT>252</LUT>
+<BRAM_18K>0</BRAM_18K>
+<URAM>0</URAM>
+</Resources>
+</AreaEstimates>
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_clk</name>
+<Object>relu&lt;24, 22&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_rst</name>
+<Object>relu&lt;24, 22&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>relu&lt;24, 22&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>relu&lt;24, 22&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>relu&lt;24, 22&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>relu&lt;24, 22&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>in_r_address0</name>
+<Object>in_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>14</Bits>
+<Attribute>address</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>in_r_ce0</name>
+<Object>in_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>in_r_q0</name>
+<Object>in_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>16</Bits>
+<Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_address0</name>
+<Object>out_r</Object>
+<Type>array</Type>
+<Scope></Scope>
+<IOProtocol>ap_memory</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>14</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -732,19 +2034,19 @@
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
-<TripCount>8</TripCount>
+<TripCount>24</TripCount>
 <Latency>undef</Latency>
 <IterationLatency>undef</IterationLatency>
 <PipelineDepth>undef</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
-<TripCount>16</TripCount>
+<TripCount>11</TripCount>
 <Latency>undef</Latency>
 <IterationLatency>undef</IterationLatency>
 <PipelineDepth>undef</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
-<TripCount>16</TripCount>
+<TripCount>11</TripCount>
 <Latency>undef</Latency>
 <IterationLatency>undef</IterationLatency>
 <PipelineDepth>undef</PipelineDepth>
@@ -769,9 +2071,9 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<DSP48E>0</DSP48E>
-<FF>225</FF>
-<LUT>447</LUT>
+<DSP48E>1</DSP48E>
+<FF>269</FF>
+<LUT>545</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -851,7 +2153,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>13</Bits>
+<Bits>14</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -884,7 +2186,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>11</Bits>
+<Bits>12</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -923,204 +2225,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>pad_8_16_0_9</Name>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>2.704</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>4369</Best-caseLatency>
-<Average-caseLatency>4369</Average-caseLatency>
-<Worst-caseLatency>4369</Worst-caseLatency>
-<Best-caseRealTimeLatency>43.690 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>43.690 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>43.690 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>4369</PipelineInitiationInterval>
-<PipelineType>none</PipelineType>
-</SummaryOfOverallLatency>
-<SummaryOfLoopLatency>
-<Loop1>
-<Name>Loop 1</Name>
-<TripCount>8</TripCount>
-<Latency>4368</Latency>
-<IterationLatency>546</IterationLatency>
-<PipelineDepth>546</PipelineDepth>
-<Loop1.1>
-<Name>Loop 1.1</Name>
-<TripCount>16</TripCount>
-<Latency>544</Latency>
-<IterationLatency>34</IterationLatency>
-<PipelineDepth>34</PipelineDepth>
-<Loop1.1.1>
-<Name>Loop 1.1.1</Name>
-<TripCount>16</TripCount>
-<Latency>32</Latency>
-<IterationLatency>2</IterationLatency>
-<PipelineDepth>2</PipelineDepth>
-</Loop1.1.1>
-</Loop1.1>
-</Loop1>
-</SummaryOfLoopLatency>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<FF>59</FF>
-<LUT>171</LUT>
-<BRAM_18K>0</BRAM_18K>
-<DSP48E>0</DSP48E>
-<URAM>0</URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_clk</name>
-<Object>pad&lt;8, 16, 0&gt;9</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>pad&lt;8, 16, 0&gt;9</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_start</name>
-<Object>pad&lt;8, 16, 0&gt;9</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_done</name>
-<Object>pad&lt;8, 16, 0&gt;9</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_idle</name>
-<Object>pad&lt;8, 16, 0&gt;9</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>pad&lt;8, 16, 0&gt;9</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>input_r_address0</name>
-<Object>input_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>11</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>input_r_ce0</name>
-<Object>input_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>input_r_q0</name>
-<Object>input_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>output_r_address0</name>
-<Object>output_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>11</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>output_r_ce0</name>
-<Object>output_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>output_r_we0</name>
-<Object>output_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>output_r_d0</name>
-<Object>output_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
-<Name>conv</Name>
+<Name>mean_24_11_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
@@ -1128,690 +2233,32 @@
 <EstimatedClockPeriod>8.648</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>1350692</Best-caseLatency>
-<Average-caseLatency>1350692</Average-caseLatency>
-<Worst-caseLatency>1350692</Worst-caseLatency>
-<Best-caseRealTimeLatency>13.507 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>13.507 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>13.507 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1350692</PipelineInitiationInterval>
+<Best-caseLatency>9385</Best-caseLatency>
+<Average-caseLatency>9385</Average-caseLatency>
+<Worst-caseLatency>9385</Worst-caseLatency>
+<Best-caseRealTimeLatency>93.850 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>93.850 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>93.850 us</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>9385</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
-<TripCount>16</TripCount>
-<Latency>1336416</Latency>
-<IterationLatency>83526</IterationLatency>
-<PipelineDepth>83526</PipelineDepth>
+<TripCount>24</TripCount>
+<Latency>9384</Latency>
+<IterationLatency>391</IterationLatency>
+<PipelineDepth>391</PipelineDepth>
 <Loop1.1>
 <Name>Loop 1.1</Name>
-<TripCount>14</TripCount>
-<Latency>83524</Latency>
-<IterationLatency>5966</IterationLatency>
-<PipelineDepth>5966</PipelineDepth>
+<TripCount>11</TripCount>
+<Latency>385</Latency>
+<IterationLatency>35</IterationLatency>
+<PipelineDepth>35</PipelineDepth>
 <Loop1.1.1>
 <Name>Loop 1.1.1</Name>
-<TripCount>14</TripCount>
-<Latency>5964</Latency>
-<IterationLatency>426</IterationLatency>
-<PipelineDepth>426</PipelineDepth>
-<Loop1.1.1.1>
-<Name>Loop 1.1.1.1</Name>
-<TripCount>8</TripCount>
-<Latency>424</Latency>
-<IterationLatency>53</IterationLatency>
-<PipelineDepth>53</PipelineDepth>
-<Loop1.1.1.1.1>
-<Name>Loop 1.1.1.1.1</Name>
-<TripCount>3</TripCount>
-<Latency>51</Latency>
-<IterationLatency>17</IterationLatency>
-<PipelineDepth>17</PipelineDepth>
-<Loop1.1.1.1.1.1>
-<Name>Loop 1.1.1.1.1.1</Name>
-<TripCount>3</TripCount>
-<Latency>15</Latency>
-<IterationLatency>5</IterationLatency>
-<PipelineDepth>5</PipelineDepth>
-</Loop1.1.1.1.1.1>
-</Loop1.1.1.1.1>
-</Loop1.1.1.1>
-</Loop1.1.1>
-</Loop1.1>
-</Loop1>
-<Loop2>
-<Name>Loop 2</Name>
-<TripCount>16</TripCount>
-<Latency>9904</Latency>
-<IterationLatency>619</IterationLatency>
-<PipelineDepth>619</PipelineDepth>
-<Loop2.1>
-<Name>Loop 2.1</Name>
-<TripCount>14</TripCount>
-<Latency>616</Latency>
-<IterationLatency>44</IterationLatency>
-<PipelineDepth>44</PipelineDepth>
-<Loop2.1.1>
-<Name>Loop 2.1.1</Name>
-<TripCount>14</TripCount>
-<Latency>42</Latency>
-<IterationLatency>3</IterationLatency>
-<PipelineDepth>3</PipelineDepth>
-</Loop2.1.1>
-</Loop2.1>
-</Loop2>
-</SummaryOfLoopLatency>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<BRAM_18K>4</BRAM_18K>
-<DSP48E>4</DSP48E>
-<FF>541</FF>
-<LUT>1190</LUT>
-<URAM>0</URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_clk</name>
-<Object>conv</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>conv</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_start</name>
-<Object>conv</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_done</name>
-<Object>conv</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_idle</name>
-<Object>conv</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>conv</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>input_r_address0</name>
-<Object>input_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>11</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>input_r_ce0</name>
-<Object>input_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>input_r_q0</name>
-<Object>input_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>output_r_address0</name>
-<Object>output_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>12</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>output_r_ce0</name>
-<Object>output_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>output_r_we0</name>
-<Object>output_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>output_r_d0</name>
-<Object>output_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>output_r_q0</name>
-<Object>output_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
-<Name>relu_16_14_s</Name>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>7.995</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>13025</Best-caseLatency>
-<Average-caseLatency>13025</Average-caseLatency>
-<Worst-caseLatency>13025</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.130 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.130 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.130 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>13025</PipelineInitiationInterval>
-<PipelineType>none</PipelineType>
-</SummaryOfOverallLatency>
-<SummaryOfLoopLatency>
-<Loop1>
-<Name>Loop 1</Name>
-<TripCount>16</TripCount>
-<Latency>13024</Latency>
-<IterationLatency>814</IterationLatency>
-<PipelineDepth>814</PipelineDepth>
-<Loop1.1>
-<Name>Loop 1.1</Name>
-<TripCount>14</TripCount>
-<Latency>812</Latency>
-<IterationLatency>58</IterationLatency>
-<PipelineDepth>58</PipelineDepth>
-<Loop1.1.1>
-<Name>Loop 1.1.1</Name>
-<TripCount>14</TripCount>
-<Latency>56</Latency>
-<IterationLatency>4</IterationLatency>
-<PipelineDepth>4</PipelineDepth>
-</Loop1.1.1>
-</Loop1.1>
-</Loop1>
-</SummaryOfLoopLatency>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<DSP48E>0</DSP48E>
-<FF>100</FF>
-<LUT>253</LUT>
-<BRAM_18K>0</BRAM_18K>
-<URAM>0</URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_clk</name>
-<Object>relu&lt;16, 14&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>relu&lt;16, 14&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_start</name>
-<Object>relu&lt;16, 14&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_done</name>
-<Object>relu&lt;16, 14&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_idle</name>
-<Object>relu&lt;16, 14&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>relu&lt;16, 14&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>in_r_address0</name>
-<Object>in_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>12</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>in_r_ce0</name>
-<Object>in_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>in_r_q0</name>
-<Object>in_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>out_r_address0</name>
-<Object>out_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>12</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>out_r_ce0</name>
-<Object>out_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>out_r_we0</name>
-<Object>out_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>out_r_d0</name>
-<Object>out_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
-<Name>max_pool_1</Name>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>7.995</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>undef</Best-caseLatency>
-<Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>undef</Worst-caseLatency>
-<Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>undef</PipelineInitiationInterval>
-<PipelineType>none</PipelineType>
-</SummaryOfOverallLatency>
-<SummaryOfLoopLatency>
-<Loop1>
-<Name>Loop 1</Name>
-<TripCount>16</TripCount>
-<Latency>undef</Latency>
-<IterationLatency>undef</IterationLatency>
-<PipelineDepth>undef</PipelineDepth>
-<Loop1.1>
-<Name>Loop 1.1</Name>
-<TripCount>7</TripCount>
-<Latency>undef</Latency>
-<IterationLatency>undef</IterationLatency>
-<PipelineDepth>undef</PipelineDepth>
-<Loop1.1.1>
-<Name>Loop 1.1.1</Name>
-<TripCount>7</TripCount>
-<Latency>undef</Latency>
-<IterationLatency>undef</IterationLatency>
-<PipelineDepth>undef</PipelineDepth>
-<Loop1.1.1.1>
-<Name>Loop 1.1.1.1</Name>
-<TripCount>undef</TripCount>
-<Latency>undef</Latency>
-<IterationLatency>undef</IterationLatency>
-<PipelineDepth>undef</PipelineDepth>
-<Loop1.1.1.1.1>
-<Name>Loop 1.1.1.1.1</Name>
-<TripCount>undef</TripCount>
-<Latency>undef</Latency>
-<IterationLatency>3</IterationLatency>
-<PipelineDepth>3</PipelineDepth>
-</Loop1.1.1.1.1>
-</Loop1.1.1.1>
-</Loop1.1.1>
-</Loop1.1>
-</Loop1>
-</SummaryOfLoopLatency>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<DSP48E>0</DSP48E>
-<FF>251</FF>
-<LUT>523</LUT>
-<BRAM_18K>0</BRAM_18K>
-<URAM>0</URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_clk</name>
-<Object>max_pool.1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>max_pool.1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_start</name>
-<Object>max_pool.1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_done</name>
-<Object>max_pool.1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_idle</name>
-<Object>max_pool.1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>max_pool.1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>in_r_address0</name>
-<Object>in_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>12</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>in_r_ce0</name>
-<Object>in_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>in_r_q0</name>
-<Object>in_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>out_r_address0</name>
-<Object>out_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>10</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>out_r_ce0</name>
-<Object>out_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>out_r_we0</name>
-<Object>out_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>out_r_d0</name>
-<Object>out_r</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>16</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
-<Name>avg_pool_16_7_s</Name>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>8.648</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>2673</Best-caseLatency>
-<Average-caseLatency>2673</Average-caseLatency>
-<Worst-caseLatency>2673</Worst-caseLatency>
-<Best-caseRealTimeLatency>26.730 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>26.730 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>26.730 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>2673</PipelineInitiationInterval>
-<PipelineType>none</PipelineType>
-</SummaryOfOverallLatency>
-<SummaryOfLoopLatency>
-<Loop1>
-<Name>Loop 1</Name>
-<TripCount>16</TripCount>
-<Latency>2672</Latency>
-<IterationLatency>167</IterationLatency>
-<PipelineDepth>167</PipelineDepth>
-<Loop1.1>
-<Name>Loop 1.1</Name>
-<TripCount>7</TripCount>
-<Latency>161</Latency>
-<IterationLatency>23</IterationLatency>
-<PipelineDepth>23</PipelineDepth>
-<Loop1.1.1>
-<Name>Loop 1.1.1</Name>
-<TripCount>7</TripCount>
-<Latency>21</Latency>
+<TripCount>11</TripCount>
+<Latency>33</Latency>
 <IterationLatency>3</IterationLatency>
 <PipelineDepth>3</PipelineDepth>
 </Loop1.1.1>
@@ -1822,8 +2269,8 @@
 <AreaEstimates>
 <Resources>
 <DSP48E>2</DSP48E>
-<FF>307</FF>
-<LUT>551</LUT>
+<FF>320</FF>
+<LUT>594</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -1831,7 +2278,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>avg_pool&lt;16, 7&gt;</Object>
+<Object>mean&lt;24, 11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1842,7 +2289,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>avg_pool&lt;16, 7&gt;</Object>
+<Object>mean&lt;24, 11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1853,7 +2300,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>avg_pool&lt;16, 7&gt;</Object>
+<Object>mean&lt;24, 11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1864,7 +2311,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>avg_pool&lt;16, 7&gt;</Object>
+<Object>mean&lt;24, 11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1875,7 +2322,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>avg_pool&lt;16, 7&gt;</Object>
+<Object>mean&lt;24, 11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1886,7 +2333,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>avg_pool&lt;16, 7&gt;</Object>
+<Object>mean&lt;24, 11&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1896,19 +2343,19 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>in_r_address0</name>
-<Object>in_r</Object>
+<name>input_r_address0</name>
+<Object>input_r</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>10</Bits>
+<Bits>12</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>in_r_ce0</name>
-<Object>in_r</Object>
+<name>input_r_ce0</name>
+<Object>input_r</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -1918,8 +2365,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>in_r_q0</name>
-<Object>in_r</Object>
+<name>input_r_q0</name>
+<Object>input_r</Object>
 <Type>array</Type>
 <Scope></Scope>
 <IOProtocol>ap_memory</IOProtocol>
@@ -1936,7 +2383,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>4</Bits>
+<Bits>5</Bits>
 <Attribute>address</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1995,29 +2442,29 @@
 <SummaryOfLoopLatency>
 <Loop1>
 <Name>Loop 1</Name>
-<TripCount>102</TripCount>
-<Latency>3468</Latency>
-<PipelineII>34</PipelineII>
-<PipelineDepth>34</PipelineDepth>
+<TripCount>153</TripCount>
+<Latency>7803</Latency>
+<PipelineII>51</PipelineII>
+<PipelineDepth>51</PipelineDepth>
 </Loop1>
 <Loop2>
 <Name>Loop 2</Name>
-<TripCount>6</TripCount>
-<Latency>504</Latency>
-<IterationLatency>84</IterationLatency>
-<PipelineDepth>84</PipelineDepth>
+<TripCount>12</TripCount>
+<Latency>1488</Latency>
+<IterationLatency>124</IterationLatency>
+<PipelineDepth>124</PipelineDepth>
 <Loop2.1>
 <Name>Loop 2.1</Name>
-<TripCount>16</TripCount>
-<Latency>80</Latency>
+<TripCount>24</TripCount>
+<Latency>120</Latency>
 <IterationLatency>5</IterationLatency>
 <PipelineDepth>5</PipelineDepth>
 </Loop2.1>
 </Loop2>
 <Loop3>
 <Name>Loop 3</Name>
-<TripCount>6</TripCount>
-<Latency>18</Latency>
+<TripCount>12</TripCount>
+<Latency>36</Latency>
 <IterationLatency>3</IterationLatency>
 <PipelineDepth>3</PipelineDepth>
 </Loop3>
@@ -2025,10 +2472,10 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>41</BRAM_18K>
-<DSP48E>14</DSP48E>
-<FF>2474</FF>
-<LUT>6262</LUT>
+<BRAM_18K>135</BRAM_18K>
+<DSP48E>23</DSP48E>
+<FF>3176</FF>
+<LUT>8561</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>

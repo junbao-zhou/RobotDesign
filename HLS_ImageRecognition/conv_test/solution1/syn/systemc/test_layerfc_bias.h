@@ -19,8 +19,8 @@ using namespace sc_dt;
 struct test_layerfc_bias_ram : public sc_core::sc_module {
 
   static const unsigned DataWidth = 16;
-  static const unsigned AddressRange = 6;
-  static const unsigned AddressWidth = 3;
+  static const unsigned AddressRange = 12;
+  static const unsigned AddressWidth = 4;
 
 //latency = 1
 //input_reg = 1
@@ -36,12 +36,18 @@ sc_lv<DataWidth> ram[AddressRange];
 
 
    SC_CTOR(test_layerfc_bias_ram) {
-        ram[0] = "0b0010100010010010";
-        ram[1] = "0b0010110101000011";
-        ram[2] = "0b0010110010000101";
-        ram[3] = "0b1011000110000011";
-        ram[4] = "0b1011000010000110";
-        ram[5] = "0b0011001011000101";
+        ram[0] = "0b1011000000100100";
+        ram[1] = "0b0011100000110100";
+        ram[2] = "0b1010000110100010";
+        ram[3] = "0b0010111110101001";
+        ram[4] = "0b1010100010000001";
+        ram[5] = "0b0010100111110111";
+        ram[6] = "0b0011001011110110";
+        ram[7] = "0b1011100010101010";
+        ram[8] = "0b0011010001100110";
+        ram[9] = "0b1011011110101011";
+        ram[10] = "0b1011110010001111";
+        ram[11] = "0b0011100111100111";
 
 
 SC_METHOD(prc_write_0);
@@ -68,8 +74,8 @@ SC_MODULE(test_layerfc_bias) {
 
 
 static const unsigned DataWidth = 16;
-static const unsigned AddressRange = 6;
-static const unsigned AddressWidth = 3;
+static const unsigned AddressRange = 12;
+static const unsigned AddressWidth = 4;
 
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in<sc_logic> ce0;

@@ -3,14 +3,46 @@
   <errorLogs>
     <logs>
       <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 33, distance = 1, offset = 1)&#xA;   between axis read on port 'input_data' and axis read on port 'input_data' (conv_test/.apc/layers.cpp:203)." projectName="conv_test" solutionName="solution1" date="2020-11-28T17:03:40.977+0800" type="Warning"/>
-        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 31, distance = 1, offset = 1)&#xA;   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:203) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:203)." projectName="conv_test" solutionName="solution1" date="2020-11-28T17:03:40.935+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 50, distance = 1, offset = 1)&#xA;   between axis read on port 'input_data' and axis read on port 'input_data' (conv_test/.apc/layers.cpp:185)." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:17.413+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 49, distance = 1, offset = 1)&#xA;   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:185) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:185)." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:17.402+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 47, distance = 1, offset = 1)&#xA;   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:185) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:185)." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:17.394+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 43, distance = 1, offset = 1)&#xA;   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:185) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:185)." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:17.373+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 35, distance = 1, offset = 1)&#xA;   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:185) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:185)." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:17.361+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)&#xA;   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:185) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:185)." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:17.263+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xA;   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:185) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:185)." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:17.056+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xA;   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:185) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:185)." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:17.044+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'test' (Loop: Loop 1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xA;   between axis read on port 'input_data' (conv_test/.apc/layers.cpp:185) and axis read on port 'input_data' (conv_test/.apc/layers.cpp:185)." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:17.033+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'mean&lt;24, 11>' to 'mean_24_11_s'." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:13.482+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'relu&lt;24, 22>' to 'relu_24_22_s'." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:13.463+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'conv.2' to 'conv_2'." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:13.453+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'pad&lt;14, 24, 0>11' to 'pad_14_24_0_11'." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:13.449+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'relu&lt;14, 24>' to 'relu_14_24_s'." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:13.442+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'pad&lt;8, 49, 0>10' to 'pad_8_49_0_10'." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:13.435+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'relu&lt;8, 49>' to 'relu_8_49_s'." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:13.429+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'conv.1' to 'conv_1'." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:13.423+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'pad&lt;3, 51, 0>9' to 'pad_3_51_0_9'." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:13.411+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'conv&lt;14, 24, 24, 3, 0, 1>' to 'conv.2' (conv_test/.apc/layers.cpp:30:42)" projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:12.751+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'conv&lt;3, 51, 8, 3, 0, 1>' to 'conv.1' (conv_test/.apc/layers.cpp:30:42)" projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:05.360+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'conv&lt;8, 49, 14, 3, 0, 2>' to 'conv' (conv_test/.apc/layers.cpp:29:42)" projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:05.345+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'max_pool&lt;24, 22, 2, 2>' to 'max_pool' (conv_test/.apc/layers.cpp:73:60)" projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:05.337+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-1.1.1' (conv_test/.apc/layers.cpp:194) because its parent loop or function is pipelined." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:03.303+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'output.data' (conv_test/.apc/layers.cpp:185)." projectName="conv_test" solutionName="solution1" date="2020-12-11T11:28:03.180+0800" type="Warning"/>
       </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'test_ap_hadd_0_full_dsp_16' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xA;create_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2127.492 ; gain = 42.867 ; free physical = 668 ; free virtual = 7963" projectName="conv_test" solutionName="solution1" date="2020-12-11T11:29:23.497+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

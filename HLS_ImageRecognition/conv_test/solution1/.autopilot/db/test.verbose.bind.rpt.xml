@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'test'" level="0">
-<item name = "Date">Sat Nov 28 17:03:42 2020
+<item name = "Date">Fri Dec 11 11:28:19 2020
 </item>
 <item name = "Version">2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)</item>
 <item name = "Project">conv_test</item>
@@ -31,21 +31,22 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_conv_1_fu_642">conv_1, 1351702, 1351702, 13.517 ms, 13.517 ms, 1351702, 1351702, none</column>
-<column name="grp_conv_fu_653">conv, 1350692, 1350692, 13.507 ms, 13.507 ms, 1350692, 1350692, none</column>
-<column name="grp_avg_pool_16_7_s_fu_663">avg_pool_16_7_s, 2673, 2673, 26.730 us, 26.730 us, 2673, 2673, none</column>
-<column name="grp_max_pool_1_fu_669">max_pool_1, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_max_pool_fu_675">max_pool, ?, ?, ?, ?, ?, ?, none</column>
-<column name="grp_relu_16_14_s_fu_681">relu_16_14_s, 13025, 13025, 0.130 ms, 0.130 ms, 13025, 13025, none</column>
-<column name="grp_relu_8_32_s_fu_687">relu_8_32_s, 33297, 33297, 0.333 ms, 0.333 ms, 33297, 33297, none</column>
+<column name="grp_conv_1_fu_818">conv_1, 3167642, 3167642, 31.676 ms, 31.676 ms, 3167642, 3167642, none</column>
+<column name="grp_conv_fu_829">conv, 3500090, 3500090, 35.001 ms, 35.001 ms, 3500090, 3500090, none</column>
+<column name="grp_conv_2_fu_839">conv_2, 8696216, 8696216, 86.962 ms, 86.962 ms, 8696216, 8696216, none</column>
+<column name="grp_mean_24_11_s_fu_849">mean_24_11_s, 9385, 9385, 93.850 us, 93.850 us, 9385, 9385, none</column>
+<column name="grp_max_pool_fu_855">max_pool, ?, ?, ?, ?, ?, ?, none</column>
+<column name="grp_relu_8_49_s_fu_861">relu_8_49_s, 77633, 77633, 0.776 ms, 0.776 ms, 77633, 77633, none</column>
+<column name="grp_relu_24_22_s_fu_867">relu_24_22_s, 47569, 47569, 0.476 ms, 0.476 ms, 47569, 47569, none</column>
+<column name="grp_relu_14_24_s_fu_873">relu_14_24_s, 32957, 32957, 0.330 ms, 0.330 ms, 32957, 32957, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">3468, 3468, 34, 34, 1, 102, yes</column>
-<column name="- Loop 2">504, 504, 84, -, -, 6, no</column>
-<column name=" + Loop 2.1">80, 80, 5, -, -, 16, no</column>
-<column name="- Loop 3">18, 18, 3, -, -, 6, no</column>
+<column name="- Loop 1">7803, 7803, 51, 51, 1, 153, yes</column>
+<column name="- Loop 2">1488, 1488, 124, -, -, 12, no</column>
+<column name=" + Loop 2.1">120, 120, 5, -, -, 24, no</column>
+<column name="- Loop 3">36, 36, 3, -, -, 12, no</column>
 </table>
 </item>
 </section>

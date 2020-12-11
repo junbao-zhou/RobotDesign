@@ -19,8 +19,8 @@ using namespace sc_dt;
 struct test_out_assign_ram : public sc_core::sc_module {
 
   static const unsigned DataWidth = 16;
-  static const unsigned AddressRange = 6;
-  static const unsigned AddressWidth = 3;
+  static const unsigned AddressRange = 12;
+  static const unsigned AddressWidth = 4;
 
 //latency = 1
 //input_reg = 1
@@ -76,8 +76,8 @@ SC_MODULE(test_out_assign) {
 
 
 static const unsigned DataWidth = 16;
-static const unsigned AddressRange = 6;
-static const unsigned AddressWidth = 3;
+static const unsigned AddressRange = 12;
+static const unsigned AddressWidth = 4;
 
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
 sc_core::sc_in<sc_logic> ce0;
