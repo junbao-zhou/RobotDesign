@@ -1,10 +1,2 @@
-# Ignore everything
-*
-
-# But not these files...
-!.gitignore
-!.cproject
-!*.cpp
-!*.h
-
-!*/
+solution1/
+.vscode

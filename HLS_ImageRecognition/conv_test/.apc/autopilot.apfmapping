@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="test.cpp" path="/home/bowman/D/MyData/Embedded/RobotDesign/RobotDesign/HLS_ImageRecognition/conv_test/.apc/test.cpp"/>
+    <originFiles name="layers.cpp" path="/home/bowman/D/MyData/Embedded/RobotDesign/RobotDesign/HLS_ImageRecognition/conv_test/.apc/layers.cpp"/>
+    <originFiles name="layers_weight.h" path="/home/bowman/D/MyData/Embedded/RobotDesign/RobotDesign/HLS_ImageRecognition/conv_test/.apc/layers_weight.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>
